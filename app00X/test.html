@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tableau = ["alami","idrissi","karimi","bejelloun","essalmi","hamdi"]
+
+        function afficher(ptb){
+            tb = ptb.reverse()
+            for (let i = 0; i < tb.length; i++) {
+                const element = tb[i];
+                console.log(element)
+            }
+        }
+        function inserer(p_Value,index){
+                for (let i = 0; i < tableau.length; i++) {
+                    if(i === index){
+                        tableau[i]=p_Value
+                    }  
+                }
+                console.log(tableau)
+            }
+        // afficher(tableau)
+        inserer("ABAB",2)
+
+    </script>
+</body>
+</html>
